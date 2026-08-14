@@ -18,14 +18,18 @@ The project is structured into three modular components:
 
 ```text
 mini_sudoku_project/
-├── step1_ocr_vision/      # Screen capture & image parsing (CV/OCR)
+├── images/                  # Sample screenshots of boards for testing
+├── step1_ocr_vision/        # Screen capture & image parsing (CV/OCR)
 │   ├── __init__.py
-│   └── capture_grid.py
-├── step2_solver/          # 6x6 Backtracking solver logic
+│   ├── capture_grid.py     # Grid extraction & OCR functions
+│   └── test_ocr_vision.py   # Standalone test script for Step 1
+├── step2_solver/            # 6x6 Backtracking solver logic
 │   ├── __init__.py
-│   └── sudoku_solver.py
-├── step3_automation/      # Keyboard & mouse simulation
+│   ├── sudoku_solver.py     # Pure solver functions
+│   └── test_solver.py       # Standalone test script for Step 2
+├── step3_automation/        # Keyboard & mouse simulation
 │   ├── __init__.py
-│   └── type_solution.py
-├── main.py                # Pipeline coordinator
-└── README.md
+│   ├── type_solution.py     # Automation logic (pyautogui)
+│   └── test_solution.py     # Standalone test script for Step 3
+├── main.py                  # Pipeline coordinator
+└── README.md                # Project documentation
