@@ -1,10 +1,10 @@
-# 🧩 Automated 6x6 Mini-Sudoku Solver
+# Automated 6x6 Mini-Sudoku Solver
 
 An end-to-end Python automation script that captures, solves, and types solutions for 6x6 Mini-Sudoku games (such as those found on LinkedIn Games) in real time.
 
 ---
 
-## 📐 How Mini-Sudoku Works
+## How Mini-Sudoku Works
 Unlike standard 9x9 Sudoku:
 * The board is a **6x6 grid**.
 * Numbers range from **1 to 6**.
@@ -12,13 +12,13 @@ Unlike standard 9x9 Sudoku:
 
 ---
 
-## 🏗️ Project Architecture
+## Project Architecture
 
 The project is structured into three modular components:
 
 ```text
 mini_sudoku_project/
-├── images/                  # Sample screenshots of boards for testing
+├── boards/                  # Sample screenshots/excel sheets of boards for testing
 ├── step1_ocr_vision/        # Screen capture & image parsing (CV/OCR)
 │   ├── __init__.py
 │   ├── capture_grid.py     # Grid extraction & OCR functions
